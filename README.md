@@ -15,10 +15,6 @@ Power BI-ready datasets. It runs locally and requires no paid cloud account.
 </p>
 
 <p align="center">
-  <a href="presentation/customer360-vi/index.html"><strong>▶ Vietnamese visual walkthrough</strong></a>
-  ·
-  <a href="presentation/customer360-vi/customer360-vi-notes.md">Detailed Vietnamese notes</a>
-  ·
   <a href="docs/assets/architecture-c360.excalidraw">Editable Excalidraw source</a>
 </p>
 
@@ -28,7 +24,7 @@ Power BI-ready datasets. It runs locally and requires no paid cloud account.
 |---|---|---|
 | 📥 Daily watch/search partitions | 🧹 Deduplication + referential DQ | 📊 Four Power BI-ready marts |
 | 🔁 Incremental, backfill, full reload | 🚧 Quarantine with rejection reason | ✅ Machine-readable quality report |
-| 🗓️ One parameterized Airflow DAG | ⚖️ Row-count reconciliation | 🇻🇳 13-slide Vietnamese walkthrough |
+| 🗓️ One parameterized Airflow DAG | ⚖️ Row-count reconciliation | 🧭 Editable architecture source |
 
 ## Business problem
 
@@ -144,7 +140,6 @@ portfolio demonstrations.
 airflow/dags/          scheduled orchestration
 customer360/           generator, PySpark pipeline, CLI
 docs/                  architecture, contracts, model, runbook
-presentation/          interactive Vietnamese walkthrough + speaker notes
 powerbi/               dashboard specification and generated exports
 tests/                 unit and end-to-end tests
 .github/workflows/     CI verification
