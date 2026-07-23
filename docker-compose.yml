@@ -1,0 +1,18 @@
+services:
+  pipeline:
+    build: .
+    environment:
+      C360_DATA_ROOT: /app/data
+      C360_SPARK_MASTER: local[2]
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./powerbi/exports:/app/powerbi/exports
+    command:
+      - demo
+      - --root
+      - /app/data
+      - --watch-events
+      - "1000"
+      - --search-events
+      - "120"

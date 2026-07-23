@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.py[cod]
+.env
+.local/
+data/
+artifacts/
+powerbi/exports/
+spark-warehouse/
+metastore_db/
+derby.log
